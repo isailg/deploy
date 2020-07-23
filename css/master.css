@@ -4,10 +4,17 @@ declaraciones
 propiedades
 valores */
 /*header {
-  background: pink;
-}*/
+  background: #5965658c;
+ }*/
+ header{
+   margin-bottom: 0px;
+ }
  body {
+   background: #5965658c;
    font-family:'Source Sans Pro',serif;
+   font-weight: normal;
+   /*font-style: italic;*/
+
  }
 h1,
 h2,
@@ -15,9 +22,49 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif ;
+  font-family: 'Roboto', monospace ;
 }
+h1 {
+   font-size: 33px;
+   line-height: 1.5;
+   letter-spacing: -.5px;
+   color: white;
+   /*text-transform: uppercase;*/
+   /*text-decoration: underline;*/
+}
+h1 strong{
+  color: #2ee696;
+}
+.phero{
+  color: white;
+}
+.hero{
+  height: 300px;
+  background-image: url('../images/hero.png');
+  background-color: #333636;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  margin: 0px;
+}
+.Proj-details{
+  width: 500px;
+  /*height: 200px;*/
+}
+.Proj-imacont{
+  width: 500px;
+}
+ .header
+ {
+   background-color: #000000 ;
+   /*ColorPicker*/
+   color: white;
+ }
 
+ .header a {
+   color: white;
+   text-decoration: none;
+ }
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Ranchers', cursive;
 font-family: 'Roboto', sans-serif;
