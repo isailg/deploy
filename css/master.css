@@ -3,9 +3,25 @@ selectores
 declaraciones
 propiedades
 valores */
-header {
+/*header {
   background: pink;
+}*/
+ body {
+   font-family:'Source Sans Pro',serif;
+ }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif ;
 }
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Ranchers', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;*/
 
 /*selector de etiqueta header - section - article - nav */
 /*selector descendente
