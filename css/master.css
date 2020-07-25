@@ -13,6 +13,7 @@ valores */
    background: #5965658c;
    font-family:'Source Sans Pro',serif;
    font-weight: normal;
+   margin: 0px;
    /*font-style: italic;*/
 
  }
@@ -29,8 +30,16 @@ h1 {
    line-height: 1.5;
    letter-spacing: -.5px;
    color: white;
+   margin-top: 0px;
    /*text-transform: uppercase;*/
    /*text-decoration: underline;*/
+}
+.ole {
+  margin-bottom: 0px;
+}
+
+.logo{
+  margin: 0px;
 }
 h1 strong{
   color: #2ee696;
