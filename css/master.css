@@ -6,24 +6,14 @@ valores */
 /*header {
   background: #5965658c;
  }*/
- header{
-   margin-bottom: 0px;
- }
- body {
-   background: #5965658c;
-   font-family:'Source Sans Pro',serif;
-   font-weight: normal;
-   margin: 0px;
-   /*font-style: italic;*/
 
- }
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', monospace ;
+  font-family: 'Roboto' ;
 }
 h1 {
    font-size: 33px;
@@ -34,12 +24,11 @@ h1 {
    /*text-transform: uppercase;*/
    /*text-decoration: underline;*/
 }
-.ole {
-  margin-bottom: 0px;
-}
-
-.logo{
-  margin: 0px;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 h1 strong{
   color: #2ee696;
@@ -47,15 +36,7 @@ h1 strong{
 .phero{
   color: white;
 }
-.hero{
-  height: 300px;
-  background-image: url('../images/hero.png');
-  background-color: #333636;
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  margin: 0px;
-}
+
 .Proj-details{
   width: 500px;
   /*height: 200px;*/
@@ -63,17 +44,7 @@ h1 strong{
 .Proj-imacont{
   width: 500px;
 }
- .header
- {
-   background-color: #000000 ;
-   /*ColorPicker*/
-   color: white;
- }
 
- .header a {
-   color: white;
-   text-decoration: none;
- }
 /*font-family: 'Open Sans', sans-serif;
 font-family: 'Ranchers', cursive;
 font-family: 'Roboto', sans-serif;
@@ -82,3 +53,122 @@ font-family: 'Roboto Slab', serif;*/
 /*selector de etiqueta header - section - article - nav */
 /*selector descendente
 body header div nav ol li a*/
+body {
+  background: #5965658c;
+  font-family:'Source Sans Pro',serif;
+  font-weight: normal;
+  margin: 0px;
+}
+
+/*---------------------------*/
+
+
+/*                           */
+/*           Header          */
+/*                           */
+.header {
+  background-color: #333636 ;
+  /*ColorPicker*/
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.logo{
+  margin: 0;
+  padding: 0;
+  height: 66px;
+}
+
+.header menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  padding: 0 20px;
+}
+.h4logo,
+.h5logo {
+  font-family: 'Open Sans', sans-serif;
+  margin:0px;
+  padding:0px;
+}
+
+/*                               */
+/*              Body             */
+/*                               */
+
+.hero{
+  height: 600px;
+  /* background-image: url('../images/hero.png'); */
+  background-color: #5965658c;
+  /* background-size: 500px 300px; */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right; */
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Projects{
+  /* height: 300px; */
+  /* background-color: #5965658; */
+  background-color: #5965658c;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  /* border: 1px solid red; */
+  width: 1080px;
+  margin: 0 auto;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  height: inherit;
+}
+.subc{
+  /* border: 1px solid red; */
+  margin:0;
+  padding: 0px;
+  display: block;
+}
+.suba{
+  /* border: 1px solid red; */
+  margin:0;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+.subd{
+  /* border: 1px  solid red; */
+  margin:0 10px 0 0;
+  padding: 0px;
+  height: 66px;
+}
+.foo{
+  /* border: 1px solid red; */
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+h4,h5{
+  /* line-height: 0.5; */
+  margin:10px 0 0 ;
+  padding:0px;
+}
