@@ -74,6 +74,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 90px;
+  padding: 0 10px 0;
 }
 
 .logo{
@@ -139,6 +140,7 @@ body {
 .container{
   /* border: 1px solid red; */
   max-width: 1300px; /*non-fijo*/
+  width: 100%;
   margin: 0 auto;
   display: inherit;
   flex-wrap: wrap;
@@ -180,20 +182,31 @@ h4,h5{
 }
 
 
-@media screen and (max-width:1080px){
+@media screen and (max-width:1360px){
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
   body{
     /* border: 10px solid blue; */
   }
 }
 
 @media screen and (max-width:480px){
-
+  .header {
+    height: auto;
+    justify-content: center;
+  }
+  .suba {
+    margin: 0 0 5px;
+  }
+  .menu {
+    margin: 0 0 5px;
+  }
 }
 
 @media screen and (max-width:320px){
-
+  .suba {
+    width:85%;
+  }
 }
