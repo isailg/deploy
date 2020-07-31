@@ -102,7 +102,7 @@ body {
 .h4logo,
 .h5logo {
   font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   margin:0px;
   padding:0px;
 }
@@ -138,9 +138,10 @@ body {
 }
 .container{
   /* border: 1px solid red; */
-  width: 1300px;
+  max-width: 1300px; /*non-fijo*/
   margin: 0 auto;
   display: inherit;
+  flex-wrap: wrap;
   align-items: inherit;
   justify-content: inherit;
   height: inherit;
@@ -167,7 +168,7 @@ body {
 }
 .foo{
   /* border: 1px solid red; */
-  width: 1080px;
+  /*max-width: 1300px; */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -176,4 +177,23 @@ h4,h5{
   /* line-height: 0.5; */
   margin:0px ;
   padding:0px;
+}
+
+
+@media screen and (max-width:1080px){
+
+}
+
+@media screen and (max-width:768px){
+  body{
+    /* border: 10px solid blue; */
+  }
+}
+
+@media screen and (max-width:480px){
+
+}
+
+@media screen and (max-width:320px){
+
 }
