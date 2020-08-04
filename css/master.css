@@ -28,10 +28,10 @@ font-family: 'Roboto Slab', serif;*/
 /*selector de etiqueta header - section - article - nav */
 /*selector descendente
 body header div nav ol li a*/
-body {
-  background: #5965658c;
+ body {
+  /* background: #5965658c;
   font-family:'Source Sans Pro',serif;
-  font-weight: normal;
+  font-weight: normal; */
   margin: 0px;
 }
 
@@ -58,9 +58,12 @@ body {
 
 .header menu {
   height: inherit;
+  display: flex;
+  flex-wrap: wrap;
 }
 .header ol {
   display: flex;
+  flex-wrap: wrap;
   height: inherit;
   list-style: none;
 }
@@ -174,23 +177,32 @@ h1 strong{
   margin: 0px;
   padding: 0px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.foo{
+.email{
   /* border: 1px solid red; */
   /*max-width: 1300px; */
-  margin: 0 auto;
+  margin: 0.7em auto;
   display: flex;
   justify-content: center;
+  width: 90%;
 }
 h4,h5{
   /* line-height: 0.5; */
   margin:0px ;
   padding:0px;
 }
+ /**/
 
+ .foot {
+   max-width: 1300px; /*non-fijo*/
+   width: 96%;
+   margin: 1.3em 0 0.7em 0;
+
+ }
 
 @media screen and (max-width:1360px){
 
@@ -260,9 +272,12 @@ h4,h5{
   .phero {
     font-size: 1.5em;
   }
+  .email{
+    text-align: center;
+  }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:323px){
   .suba {
     width:85%;
   }
@@ -276,5 +291,13 @@ h4,h5{
     width: 90%;
     height: auto;
     margin-bottom: 1em;
+  }
+  .header ol {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: inherit;
+    list-style: none;
   }
 }
