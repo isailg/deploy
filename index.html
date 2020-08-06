@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="bm"></i>
     <header class="header">
       <div class="container">
         <div class="suba">
@@ -27,7 +27,7 @@
           </div>
         </div>
 
-        <nav class="menu is-active">
+        <nav class="menu">
           <ol>
             <li>
               <a class="link" href="#">CV</a>
@@ -86,7 +86,7 @@
       <div class="yvid">
         <video class="hv" src="videos/31_PC.mp4" width="1280" height="720" controls>
         </video>
-        <iframe class="yv" width="560" height="315" src="https://www.youtube.com/embed/fKXztwtXaGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="yv" width="560" height="315" src="https://www.youtube.com/embed/fKXztwtXaGo"  allowfullscreen></iframe>
       </div>
     </section>
 
@@ -102,5 +102,25 @@
     <footer class="foot">
         <small>© 2020 López-García, Isaí</small>
     </footer>
+
+    <script>
+      const tablet = window.matchMedia('screen and (max-width: 480px)');
+      console.log(tablet);
+      const menu = document.querySelector('.menu');
+      console.log(menu);
+      const  burgerButton = document.querySelector('#bm');
+      console.log(burgerButton);
+
+      burgerButton.addEventListener('click', hideShow);
+
+      function hideShow(){
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
   </body>
 </html>
