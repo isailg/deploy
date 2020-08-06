@@ -105,13 +105,22 @@
 
     <script>
       const tablet = window.matchMedia('screen and (max-width: 480px)');
-      console.log(tablet);
+      // console.log(tablet);
       const menu = document.querySelector('.menu');
-      console.log(menu);
+      // console.log(menu);
       const  burgerButton = document.querySelector('#bm');
-      console.log(burgerButton);
+      // console.log(burgerButton);
 
-      burgerButton.addEventListener('click', hideShow);
+
+      tablet.addListener(validation);
+      function validation(event){
+        if (event.matches){
+          burgerButton.addEventListener('click', hideShow);
+        }else {
+          burgerButton.removeEventListener('click', hideShow);
+        }
+        // console.log(event.matches);
+      }
 
       function hideShow(){
         if (menu.classList.contains('is-active')) {
