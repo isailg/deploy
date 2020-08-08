@@ -323,7 +323,7 @@ h4,h5{
  }
 
  .vids{
-   /* display: flex; */
+   /*display: flex; */
    /* flex-wrap: wrap; */
  }
  .hv{
@@ -335,15 +335,19 @@ h4,h5{
    left: 0;
    width: 50%;
    height: auto;
+   margin:0;
+   padding:0;
  }
  .yv{
    position: absolute;
    top: 0;
    bottom: 0;
    right: 0;
-   left: 50%;
+   left: 0;
    width: 50%;
    height: 100%;
+   margin:0;
+   padding:0;
  }
 
  .yvid{
